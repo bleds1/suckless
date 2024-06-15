@@ -11,7 +11,7 @@ static const char col_gray1[]       = "#22262f";
 static const char col_gray2[]       = "#22262f";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#e0e0e0";
-static const char col_cyan[]        = "#62829D";
+static const char col_cyan[]        = "#292D38";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -62,12 +62,12 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_slash,  spawn,          SHCMD("st -e ranger")},
-	{ MODKEY|ShiftMask,             XK_slash,  spawn,          SHCMD("searchweb")},
+	{ MODKEY|ShiftMask,             XK_slash,  spawn,          SHCMD("st -e ranger")},
+	{ MODKEY,                       XK_slash,  spawn,          SHCMD("pcmanfm")},
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("qutebrowser")},
 	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD("firefox")},
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("rofi -modi emoji -show emoji")},
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("emacsclient -c -a emacs")},
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -76,6 +76,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          SHCMD("i3lock --color=000000 ")},
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("rofi -modi emoji -show emoji")},
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("passmenu")},
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("rofi -show run")},
