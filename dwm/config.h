@@ -1,12 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 24;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMonoNerdFont-Regular:pixelsize=10:antialias=true:autohint=true", "monospace:size=10", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true"};
-static const char dmenufont[]       = "JetBrainsMonoNerdFont-Regular:pixelsize=10:antialias=true:autohint=true";
+static const char *fonts[]          = { "Topaz a600a1200a400:size=9", "JetBrainsMonoNerdFont-Regular:pixelsize=10:antialias=true:autohint=true", "monospace:size=10", "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true"};
+static const char dmenufont[]       = "Topaz a600a1200a400:size=9";
 static const char col_gray1[]       = "#22262f";
 static const char col_gray2[]       = "#22262f";
 static const char col_gray3[]       = "#bbbbbb";
